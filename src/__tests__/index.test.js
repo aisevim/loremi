@@ -59,3 +59,13 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 Aenean sollicitudin elit non sapien eleifend, id fringilla enim eleifend. Integer a malesuada nunc. Phasellus venenatis tristique sapien nec vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec elit risus. Nulla facilisi. Pellentesque non nisi quis libero scelerisque feugiat."`)
   })
 })
+
+test(`Should replace the suffix by \r\n`, async ({ expect }) => {
+  const result = await getLoremi({
+    unit: 'paragraph',
+    count: 2,
+    suffix: '\r\n',
+  })
+
+  expect(result).toMatch('\r\n')
+})
