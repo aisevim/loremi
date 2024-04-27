@@ -1,0 +1,44 @@
+name: Prepare
+description: Prepares the repo for a typical CI job
+
+inputs:
+  node-version:
+    description: "The version of Node.js to use"
+    default: "20.10.x"
+    required: false
+
+  npm-token:
+    description: "The NPM token to use"
+    default: ""
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Init Git user
+      run: |
+        git config --global user.name "aisevim"
+        git config --global user.email "a.aydnlp.pro@gmail.com"
+      shell: bash
+
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8.10.x
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        registry-url: https://registry.npmjs.org/
+        cache: "pnpm"
+
+    - name: Init Npm config
+      if: inputs.npm-token
+      run: npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+      env:
+        NPM_TOKEN: ${{ inputs.npm-token }}
+      shell: bash
+
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash
