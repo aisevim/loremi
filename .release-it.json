@@ -1,0 +1,63 @@
+{
+  "hooks": {
+    "before:init": ["pnpm run release:ci:test"],
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
+  "git": {
+    "commitMessage": "chore: release v${version}",
+    "requireBranch": "master",
+    "requireCleanWorkingDir": false,
+    "tagAnnotation": "Release v${version}",
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Loremi v${version}"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "header": "# 💫 Loremi Changelog",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "✨ Features"
+          },
+          {
+            "type": "fix",
+            "section": "🩹 Bug Fixes"
+          },
+          {
+            "type": "chore",
+            "section": "🏗️ Chore"
+          },
+          {
+            "type": "docs",
+            "section": "📝 Docs"
+          },
+          {
+            "type": "style",
+            "hidden": true
+          },
+          {
+            "type": "refactor",
+            "hidden": true
+          },
+          {
+            "type": "perf",
+            "hidden": true
+          },
+          {
+            "type": "test",
+            "hidden": true
+          }
+        ]
+      }
+    }
+  },
+  "npm": {
+    "publish": true
+  }
+}

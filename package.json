@@ -1,20 +1,46 @@
 {
   "name": "loremi",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Lorem Ipsum Internalization",
   "license": "ISC",
-  "author": "",
-  "keywords": [],
+  "author": "aisevim <a.aydnlp.pro@gmail.com>",
+  "volta": {
+    "node": "20.10.0"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "bugs": {
+    "url": "https://github.com/aisevim/loremi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aisevim/loremi.git"
+  },
+  "keywords": [
+    "lorem",
+    "loremi",
+    "lorem ipsum",
+    "loremipsum"
+  ],
   "type": "module",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test:unit": "vitest",
-    "test:unit:ci": "vitest --run"
+    "test:unit:ci": "vitest --run",
+    "release": "release-it",
+    "release:ci": "release-it --ci",
+    "release:ci:test": "release-it --ci --dry-run"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "eslint-config-symmetrys": "^0.11.1",
+    "release-it": "^17.2.1",
     "vitest": "^1.5.2"
   }
 }
