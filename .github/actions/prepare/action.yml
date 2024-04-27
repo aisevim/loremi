@@ -21,7 +21,7 @@ runs:
         git config --global user.email "a.aydnlp.pro@gmail.com"
       shell: bash
 
-    - uses: pnpm/action-setup@v2
+    - uses: pnpm/action-setup@v3
       with:
         version: 8.10.x
 
