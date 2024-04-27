@@ -7,6 +7,18 @@ export async function getLangText(lang) {
   return import(`${ join(dir, langsDir, lang) }.js`)
 }
 
+export function getTextMiddleware({ text, unit, suffix, count }) {
+  const unitMap = {
+    word: ' ',
+    sentence: '.',
+    paragraph: suffix,
+  }
+  const arr = text.split(unitMap[unit])
+  const textResult = arr.slice(0, count).join(unitMap[unit])
+
+  return textResult
+}
+
 export async function getLoremi(options = {}) {
   const {
     lang = 'lorem',
@@ -19,13 +31,12 @@ export async function getLoremi(options = {}) {
   const originalText = originalTextByLang.getText({
     suffix,
   })
-  const unitMap = {
-    word: ' ',
-    sentence: '.',
-    paragraph: suffix,
-  }
-  const arr = originalText.split(unitMap[unit])
-  const text = arr.slice(0, count).join(unitMap[unit])
+  const text = getTextMiddleware({
+    text: originalText,
+    unit,
+    suffix,
+    count,
+  })
 
   return text
 }
