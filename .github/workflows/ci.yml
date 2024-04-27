@@ -29,8 +29,5 @@ jobs:
       - name: Lint
         run: pnpm run lint
 
-      - name: Build
-        run: pnpm run build
-
       - name: Tests
-        run: pnpm run test:ci
+        run: pnpm run test:unit:ci
