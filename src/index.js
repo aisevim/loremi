@@ -27,12 +27,10 @@ export async function getLoremi(options = {}) {
     count = 1,
   } = options
 
-  const originalTextByLang = await getLangText(lang) || {}
-  const originalText = originalTextByLang.getText({
-    suffix,
-  })
+  const rawTextByLang = await getLangText(lang) || {}
+  const rawText = rawTextByLang.getText({ suffix })
   const text = getTextMiddleware({
-    text: originalText,
+    text: rawText,
     unit,
     suffix,
     count,
