@@ -1,5 +1,12 @@
 # 💫 Loremi Changelog
 
+## [0.2.1](https://github.com/aisevim/loremi/compare/v0.2.0...v0.2.1) (2024-04-29)
+
+
+### 🩹 Bug Fixes
+
+* **unit:** delete '.', ',' and Line break for Words and Line break for Sentences ([1c04305](https://github.com/aisevim/loremi/commit/1c04305e62d93fd690a01ee726da5e41045d0c85))
+
 ## 0.2.0 (2024-04-27)
 
 
