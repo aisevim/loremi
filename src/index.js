@@ -14,7 +14,16 @@ export function getTextMiddleware({ text, unit, suffix, count }) {
     paragraph: suffix,
   }
   const arr = text.split(unitMap[unit])
-  const textResult = arr.slice(0, count).join(unitMap[unit])
+  let textResult = arr.slice(0, count).join(unitMap[unit])
+
+  switch (unit) {
+    case 'word':
+      textResult = textResult.replace(/\.|,/g, '')
+    // eslint-disable-next-line no-fallthrough
+    case 'sentence':
+      textResult = textResult.replaceAll(suffix, ' ')
+      break
+  }
 
   return textResult
 }

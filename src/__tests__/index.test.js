@@ -29,22 +29,22 @@ describe(`Should return the good 'unit' options`, () => {
 })
 
 describe(`Should return the good count of 'unit'`, () => {
-  test(`Should return only 3 word`, async ({ expect }) => {
+  test(`Should return only 55 word without '.', ',' or 'line break'`, async ({ expect }) => {
     const result = await getLoremi({
       unit: 'word',
-      count: 3,
+      count: 55,
     })
 
-    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor"`)
+    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet consectetur adipiscing elit Sed ut quam lacus Fusce non eleifend enim Donec auctor convallis nisi vitae suscipit justo Suspendisse potenti Nulla nec ultricies nibh Vivamus id odio nec urna semper tincidunt Nam dapibus magna et aliquet lobortis velit metus bibendum massa non viverra lectus nisi vel nunc Quisque lacinia enim sit"`)
   })
 
-  test(`Should return only 2 sentences`, async ({ expect }) => {
+  test(`Should return only 9 sentences without 'line break'`, async ({ expect }) => {
     const result = await getLoremi({
       unit: 'sentence',
-      count: 2,
+      count: 9,
     })
 
-    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam lacus"`)
+    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam lacus. Fusce non eleifend enim. Donec auctor convallis nisi, vitae suscipit justo. Suspendisse potenti. Nulla nec ultricies nibh. Vivamus id odio nec urna semper tincidunt. Nam dapibus, magna et aliquet lobortis, velit metus bibendum massa, non viverra lectus nisi vel nunc. Quisque lacinia enim sit amet ipsum varius, nec rhoncus felis ullamcorper"`)
   })
 
   test(`Should return only 4 paragraph`, async ({ expect }) => {
