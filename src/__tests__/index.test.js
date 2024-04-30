@@ -24,7 +24,7 @@ describe(`Should return the good 'unit' options`, () => {
       unit: 'paragraph',
     })
 
-    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam lacus. Fusce non eleifend enim. Donec auctor convallis nisi, vitae suscipit justo. Suspendisse potenti. Nulla nec ultricies nibh. Vivamus id odio nec urna semper tincidunt. Nam dapibus, magna et aliquet lobortis, velit metus bibendum massa, non viverra lectus nisi vel nunc."`)
+    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed dolor nunc. In hendrerit, leo eget dignissim interdum, libero dolor auctor tellus, eu consectetur neque elit quis nunc. Cras elementum pretium est."`)
   })
 })
 
@@ -35,16 +35,16 @@ describe(`Should return the good count of 'unit'`, () => {
       count: 55,
     })
 
-    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet consectetur adipiscing elit Sed ut quam lacus Fusce non eleifend enim Donec auctor convallis nisi vitae suscipit justo Suspendisse potenti Nulla nec ultricies nibh Vivamus id odio nec urna semper tincidunt Nam dapibus magna et aliquet lobortis velit metus bibendum massa non viverra lectus nisi vel nunc Quisque lacinia enim sit"`)
+    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet consectetur adipiscing elit Nulla sed dolor nunc In hendrerit leo eget dignissim interdum libero dolor auctor tellus eu consectetur neque elit quis nunc Cras elementum pretium est Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas Vestibulum tortor quam feugiat vitae ultricies eget tempor sit amet ante"`)
   })
 
-  test(`Should return only 9 sentences without 'line break'`, async ({ expect }) => {
+  test(`Should return only 12 sentences without 'line break'`, async ({ expect }) => {
     const result = await getLoremi({
       unit: 'sentence',
-      count: 9,
+      count: 12,
     })
 
-    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam lacus. Fusce non eleifend enim. Donec auctor convallis nisi, vitae suscipit justo. Suspendisse potenti. Nulla nec ultricies nibh. Vivamus id odio nec urna semper tincidunt. Nam dapibus, magna et aliquet lobortis, velit metus bibendum massa, non viverra lectus nisi vel nunc. Quisque lacinia enim sit amet ipsum varius, nec rhoncus felis ullamcorper"`)
+    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed dolor nunc. In hendrerit, leo eget dignissim interdum, libero dolor auctor tellus, eu consectetur neque elit quis nunc. Cras elementum pretium est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui"`)
   })
 
   test(`Should return only 4 paragraph`, async ({ expect }) => {
@@ -53,10 +53,12 @@ describe(`Should return the good count of 'unit'`, () => {
       count: 4,
     })
 
-    expect(result).toMatchInlineSnapshot(`"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam lacus. Fusce non eleifend enim. Donec auctor convallis nisi, vitae suscipit justo. Suspendisse potenti. Nulla nec ultricies nibh. Vivamus id odio nec urna semper tincidunt. Nam dapibus, magna et aliquet lobortis, velit metus bibendum massa, non viverra lectus nisi vel nunc.
-Quisque lacinia enim sit amet ipsum varius, nec rhoncus felis ullamcorper. Cras at eros libero. Curabitur ut faucibus dui. Nullam nec justo ut nisi vehicula aliquam sit amet et dui. Sed efficitur, est id efficitur feugiat, urna turpis tincidunt mi, et egestas sapien purus nec purus. Vivamus fringilla est sed diam fermentum, vitae luctus turpis vehicula.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed quam vel nunc iaculis fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam nec urna nec nulla ultrices interdum. Nulla id arcu nisi. Mauris vulputate euismod turpis, eu gravida ante scelerisque ut.
-Aenean sollicitudin elit non sapien eleifend, id fringilla enim eleifend. Integer a malesuada nunc. Phasellus venenatis tristique sapien nec vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec elit risus. Nulla facilisi. Pellentesque non nisi quis libero scelerisque feugiat."`)
+    expect(result).toMatchInlineSnapshot(`
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed dolor nunc. In hendrerit, leo eget dignissim interdum, libero dolor auctor tellus, eu consectetur neque elit quis nunc. Cras elementum pretium est.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+      Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+      Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat."
+    `)
   })
 })
 
