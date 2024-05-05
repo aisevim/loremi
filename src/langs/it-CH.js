@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mattina sorge sulle Alpi svizzere, tingendo di rosa le cime innevate e i laghi cristallini. Le città svizzere si risvegliano con il suono delle campane delle chiese e il vociare dei mercati.${ suffix }Marco, un residente di Zurigo, si prepara per una giornata di lavoro nella finanza svizzera, sorseggiando un caffè e leggendo le notizie del giorno.${ suffix }I turisti affollano le vie di Ginevra, ammirando il Jet d'Eau e visitando le organizzazioni internazionali che hanno sede nella città.${ suffix }A Berna, la capitale svizzera, i politici si riuniscono nel Palazzo Federale per discutere delle questioni nazionali e internazionali.${ suffix }Nel Ticino, i viticoltori lavorano tra le vigne terrazzate, coltivando i celebri vini della regione.${ suffix }A Lugano, i passeggeri salgono sui battelli che solcano il lago di Lugano, godendo dei panorami mozzafiato delle montagne circostanti.${ suffix }Nel canton Vallese, gli sciatori si preparano per una giornata sulle piste di Zermatt, immersi nel paesaggio alpino.${ suffix }A Losanna, gli studenti dell'Università di Losanna si dedicano agli studi e alle ricerche nelle diverse facoltà della prestigiosa istituzione.${ suffix }A Lucerna, i visitatori esplorano il Ponte della Kapellbrücke e la Cappella di Santa Maria degli Angeli, gioielli architettonici della città.${ suffix }A Basilea, i musei aprono le loro porte agli appassionati d'arte e di storia, offrendo una vasta gamma di collezioni permanenti e mostre temporanee.${ suffix }Nel canton Grigioni, gli appassionati di trekking si avventurano sulle numerose vie escursionistiche che attraversano le valli e le montagne.${ suffix }A Sciaffusa, i turisti ammirano le Cascate del Reno, una delle più grandi cascate d'Europa, immergendosi nella natura selvaggia.${ suffix }A San Gallo, gli artigiani lavorano la pregiata seta e il merletto, mantenendo vive le tradizioni artigianali della città.${ suffix }A Friburgo, i residenti si riuniscono per festeggiare il celebre carnevale di Friburgo, con maschere colorate e sfilate festive.${ suffix }A Neuchâtel, gli orologiai continuano la tradizione secolare della produzione di orologi di precisione, esportati in tutto il mondo.${ suffix }`,
+    code: `it-CH`,
+    macro: `it`,
+  }
+}
