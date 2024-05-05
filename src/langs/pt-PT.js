@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `A manhã chega a Portugal, iluminando as ruas de Lisboa e as margens do Rio Douro no Porto. Os portugueses acordam com o aroma do café e o som das gaivotas no mar.${ suffix }Maria, uma residente do Porto, levanta-se cedo para ir ao mercado comprar pão fresco e frutas para o pequeno-almoço. O sol brilha sobre as colinas verdejantes do Minho.${ suffix }Na capital, os estudantes preparam-se para mais um dia de aulas na Universidade de Lisboa, enquanto os trabalhadores começam a sua jornada nos escritórios do Chiado.${ suffix }Na região do Alentejo, os agricultores dedicam-se à colheita do trigo e das uvas, contribuindo para a rica tradição agrícola do país.${ suffix }No Algarve, os turistas desfrutam das praias de areia dourada e das águas cristalinas do Atlântico.${ suffix }Na ilha da Madeira, os viajantes exploram as levadas e os miradouros, admirando as vistas panorâmicas sobre o oceano.${ suffix }Nos Açores, os pescadores partem em busca do peixe fresco do dia, enquanto os turistas exploram as maravilhas naturais das lagoas e crateras.${ suffix }Na região do Douro, os enólogos trabalham nas vinhas em socalcos, produzindo o famoso vinho do Porto.${ suffix }Em Coimbra, os estudantes passeiam pelos jardins da universidade, imersos na atmosfera histórica da cidade.${ suffix }Em Évora, os visitantes maravilham-se com os monumentos megalíticos e a arquitetura medieval, Património Mundial da UNESCO.${ suffix }Em Braga, os fiéis dirigem-se à Sé Catedral para a missa da manhã, enquanto os turistas exploram os tesouros históricos da cidade.${ suffix }Em Sintra, os viajantes descobrem os palácios e os jardins exuberantes, inspirando-se na beleza romântica da região.${ suffix }Na Serra da Estrela, os amantes do desporto de inverno deslizam pelas encostas cobertas de neve, desfrutando de momentos de pura adrenalina.${ suffix }Na costa vicentina, os surfistas apanham as ondas perfeitas e os caminhantes exploram as falésias dramáticas e as praias desertas.${ suffix }Ao longo do Tejo, os lisboetas fazem jogging ao longo do passeio ribeirinho, desfrutando do ar fresco e das vistas deslumbrantes da cidade.${ suffix }`,
+    code: `pt-PT`,
+    macro: `pt`,
+  }
+}
