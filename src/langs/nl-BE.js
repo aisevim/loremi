@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `De ochtend begint in België, verlicht de straten van Brussel en de kust van Oostende. De Belgen worden wakker met de geur van versgebakken broodjes en het geluid van meeuwen aan de Noordzee.${ suffix }Marie, een inwoonster van Antwerpen, staat vroeg op om naar de markt te gaan en vers fruit en groenten te kopen voor het ontbijt. De zon schijnt over de glooiende heuvels van de Ardennen.${ suffix }In de hoofdstad maken studenten zich klaar voor een nieuwe dag aan de Vrije Universiteit Brussel, terwijl werknemers hun dag beginnen in de Europese wijk.${ suffix }In West-Vlaanderen werken de boeren op het land en zorgen ze voor de bloeiende bloemenvelden die de streek zo kleurrijk maken.${ suffix }In Luik genieten de mensen van een kopje koffie op het terras van een café aan de Maas, terwijl ze de stad ontwaken zien.${ suffix }In Limburg verkennen toeristen de groene heuvels per fiets en genieten ze van de rust en stilte van het platteland.${ suffix }In Namen bewonderen bezoekers de imposante citadel boven de stad en leren ze over de rijke geschiedenis van de regio.${ suffix }In Henegouwen maken wandelaars een tocht door de prachtige bossen en valleien van de Ardennen, op zoek naar verborgen schatten.${ suffix }In Luxemburg bezoeken toeristen de middeleeuwse stad Durbuy en genieten ze van de charmante straatjes en historische gebouwen.${ suffix }In Waals-Brabant trekken gezinnen naar het Zoniënwoud voor een ontspannen wandeling en een picknick in de natuur.${ suffix }In Vlaams-Brabant ontdekken natuurliefhebbers de uitgestrekte velden en boomgaarden die de regio zo schilderachtig maken.${ suffix }In Brugge maken de grachten en historische gebouwen indruk op toeristen, die genieten van een boottocht door de stad.${ suffix }In Gent verzamelen studenten zich op de terrassen van de Graslei voor een drankje en een praatje, terwijl ze genieten van het uitzicht op de middeleeuwse gebouwen.${ suffix }In Leuven worden wetenschappers en onderzoekers geïnspireerd door de innovatieve sfeer van de KU Leuven, een van de oudste universiteiten van Europa.${ suffix }In Mechelen bewonderen bezoekers de prachtige Sint-Romboutskathedraal en verkennen ze de smalle steegjes van de historische binnenstad.${ suffix }`,
+    code: `nl-BE`,
+    macro: `nl`,
+  }
+}
