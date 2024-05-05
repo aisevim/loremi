@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mañana llega a España, iluminando las calles empedradas de las ciudades históricas y las playas doradas de la costa. Los cafés abren sus puertas, llenando el aire con el aroma del café recién hecho.${ suffix }María, una residente de Madrid, se prepara para el día mientras contempla la ciudad desde su balcón. El bullicio de la Gran Vía la invita a un nuevo día de aventuras.${ suffix }En Barcelona, los turistas pasean por Las Ramblas, admirando la arquitectura modernista y disfrutando de las tapas en los bares locales.${ suffix }En Sevilla, el sol brilla sobre la Giralda mientras los sevillanos comienzan su día con un café y churros.${ suffix }En el norte, en San Sebastián, los surfistas se preparan para coger las olas mientras los lugareños disfrutan de pintxos en los bares del casco antiguo.${ suffix }En Valencia, los agricultores recogen naranjas y limones en los campos mientras los niños se preparan para ir a la escuela.${ suffix }En las Islas Canarias, los turistas disfrutan del sol y la playa durante todo el año, explorando las maravillas naturales de las islas.${ suffix }En Galicia, los pescadores salen al mar temprano en la mañana, buscando la captura del día.${ suffix }En Bilbao, los amantes del arte visitan el Museo Guggenheim, maravillándose con la arquitectura vanguardista y las exposiciones contemporáneas.${ suffix }En Granada, los visitantes exploran la Alhambra, maravillándose con los intrincados detalles y los exuberantes jardines.${ suffix }En Mallorca, los ciclistas recorren las rutas escénicas de la isla, disfrutando de las vistas panorámicas y del clima mediterráneo.${ suffix }En Madrid, los ejecutivos se apresuran hacia el trabajo mientras los madrileños disfrutan de un desayuno tranquilo en las terrazas.${ suffix }En Toledo, los turistas exploran las estrechas calles de la ciudad vieja, sumergiéndose en la historia y la cultura.${ suffix }En Cádiz, los bailaores de flamenco practican sus pasos mientras los músicos afinan sus guitarras.${ suffix }En Tenerife, los excursionistas suben al Teide, el pico más alto de España, disfrutando de las vistas impresionantes desde la cima.${ suffix }`,
+    code: `es-ES`,
+    macro: `es`,
+  }
+}

@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mañana comienza en Argentina, iluminando las calles empedradas de Buenos Aires y las montañas nevadas de la Patagonia. Los porteños se despiertan con el aroma del mate y el sonido de los pájaros en los parques.${ suffix }Juan, un residente de Córdoba, sale a caminar por las calles del barrio, saludando a los vecinos y disfrutando del sol de la mañana.${ suffix }En Mendoza, los viñedos se preparan para la cosecha mientras los bodegueros revisan las uvas y degustan los vinos.${ suffix }En la provincia de Salta, los gauchos se reúnen para celebrar las fiestas tradicionales, con música folclórica y bailes típicos.${ suffix }En la región de la Pampa, los estancieros trabajan en el campo, cuidando del ganado y disfrutando de los vastos paisajes.${ suffix }En las Cataratas del Iguazú, los turistas maravillados contemplan la majestuosidad de las cascadas, rodeados de exuberante vegetación.${ suffix }En Rosario, los niños juegan en los parques junto al río mientras los barcos navegan por el Paraná.${ suffix }En Bariloche, los esquiadores se preparan para descender las pistas nevadas del Cerro Catedral, disfrutando de las impresionantes vistas del lago Nahuel Huapi.${ suffix }En la provincia de Tucumán, los productores de azúcar cosechan caña en los campos, contribuyendo a la industria azucarera del país.${ suffix }En la región de la Quebrada de Humahuaca, los artesanos crean coloridas artesanías utilizando técnicas ancestrales.${ suffix }En Mar del Plata, los turistas disfrutan de un día de playa y sol en la costa atlántica, mientras los pescadores salen al mar en busca de la captura del día.${ suffix }En Tierra del Fuego, los aventureros se embarcan en excursiones para avistar pingüinos y ballenas en las aguas del Atlántico Sur.${ suffix }En la Ciudad de Buenos Aires, los amantes del tango se reúnen en milongas para bailar al compás de la música y la pasión.${ suffix }En la provincia de Jujuy, los agricultores cosechan quinoa y otros cultivos andinos en los valles fértiles de la región.${ suffix }En la región del Chaco, los guaraníes preservan su cultura ancestral, compartiendo sus conocimientos sobre plantas medicinales y rituales tradicionales.${ suffix }`,
+    code: `es-AR`,
+    macro: `es`,
+  }
+}

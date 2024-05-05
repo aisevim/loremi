@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mañana llega a Chile, iluminando los cerros de Valparaíso y los viñedos del Valle Central. Los santiaguinos se preparan para enfrentar el día, disfrutando de un café caliente y de la vista de la cordillera.${ suffix }Juanita, una residente de Concepción, sale a comprar pan fresco en la esquina mientras saluda a sus vecinos. El aire fresco del sur le recuerda lo afortunada que es de vivir en esta hermosa ciudad.${ suffix }En Viña del Mar, los turistas disfrutan de un paseo por la playa mientras los pescadores preparan sus botes para salir a la mar.${ suffix }En la Región de O'Higgins, los agricultores trabajan en los campos, cosechando uvas para la próxima vendimia.${ suffix }En el desierto de Atacama, los turistas maravillados contemplan el cielo estrellado mientras los guías explican la historia y la geología de la región.${ suffix }En la Araucanía, los mapuches celebran una ceremonia tradicional, agradeciendo a la tierra por su generosidad y protección.${ suffix }En Puerto Montt, los pescadores regresan al puerto con una abundante captura de mariscos frescos.${ suffix }En La Serena, los turistas visitan el Observatorio Cerro Tololo, fascinados por la belleza del universo.${ suffix }En Punta Arenas, los aventureros se preparan para explorar los glaciares y fiordos de la Patagonia chilena.${ suffix }En la Isla de Pascua, los moáis guardan silencio mientras los visitantes recorren los misteriosos sitios arqueológicos.${ suffix }En Santiago, los estudiantes llenan las calles del centro mientras se dirigen a clases en la Universidad de Chile.${ suffix }En Valdivia, los amantes de la cerveza disfrutan de una visita a las cervecerías locales, probando las variedades artesanales.${ suffix }En Chiloé, los pescadores preparan curantos en la playa, compartiendo esta tradicional comida con amigos y familiares.${ suffix }En Antofagasta, los trabajadores de la minería comienzan su turno en las minas del desierto, extrayendo cobre, oro y plata.${ suffix }En la Región de Los Lagos, los turistas exploran los parques nacionales y los lagos cristalinos, respirando aire puro y admirando la belleza natural.${ suffix }`,
+    code: `es-CL`,
+    macro: `es`,
+  }
+}

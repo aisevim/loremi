@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mañana llega a Colombia, iluminando las coloridas calles de Cartagena y los cafetales de la región del Eje Cafetero. Los bogotanos se levantan temprano para enfrentar el tráfico de la capital, disfrutando de un tinto en la esquina antes de ir al trabajo.${ suffix }María, una residente de Medellín, se levanta con el sonido de los pájaros en su ventana y se prepara para otro día soleado en la ciudad de la eterna primavera.${ suffix }En la Costa Caribe, los pescadores salen al mar en sus pequeñas embarcaciones, buscando la captura del día para vender en el mercado local.${ suffix }En el Amazonas, los indígenas practican sus tradiciones ancestrales, honrando la selva y sus espíritus protectores.${ suffix }En el Valle del Cauca, los agricultores cosechan caña de azúcar y producen el delicioso jugo de panela.${ suffix }En la región del Chocó, los turistas disfrutan de las playas vírgenes y la exuberante selva tropical, observando ballenas y delfines en las aguas del Pacífico.${ suffix }En Boyacá, los campesinos participan en la tradicional Feria de las Flores, mostrando sus mejores cosechas y ganados.${ suffix }En Cali, los bailarines practican salsa en las calles mientras los turistas disfrutan de la vibrante vida nocturna de la ciudad.${ suffix }En Santander, los aventureros se preparan para hacer rafting en el río Chicamocha, desafiando sus rápidos turbulentos.${ suffix }En el Archipiélago de San Andrés, los buceadores exploran los arrecifes de coral, maravillándose con la diversidad de vida marina.${ suffix }En la región del Huila, los caficultores recolectan los granos de café maduros, preparándolos para el mercado nacional e internacional.${ suffix }En Nariño, los campesinos cosechan la hoja de coca, una planta sagrada para las comunidades indígenas y una importante fuente de ingresos para la región.${ suffix }En la región del Cauca, los líderes comunitarios se reúnen para discutir proyectos de desarrollo sostenible y la protección del medio ambiente.${ suffix }En los Llanos Orientales, los vaqueros montan a caballo y cuidan del ganado en las extensas llanuras, bajo el calor del sol y el cielo infinito.${ suffix }`,
+    code: `es-CO`,
+    macro: `es`,
+  }
+}

@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mañana llega a Bolivia, iluminando las calles de La Paz y las vastas llanuras del altiplano. Los bolivianos se despiertan con el aroma del mate de coca y el sonido de la música andina.${ suffix }María, una residente de Cochabamba, se levanta temprano para ir al mercado a comprar frutas frescas y pan para el desayuno. El sol brilla sobre el valle.${ suffix }En La Paz, los estudiantes se preparan para un nuevo día de clases en la Universidad Mayor de San Andrés, mientras los trabajadores comienzan su jornada en el centro de la ciudad.${ suffix }En el altiplano, los pastores cuidan de sus llamas y alpacas, preservando la cultura y tradiciones andinas del país.${ suffix }En Santa Cruz, los agricultores trabajan en los campos de soja y caña de azúcar, contribuyendo a la economía agrícola del país.${ suffix }En Sucre, los turistas visitan el centro histórico, declarado Patrimonio de la Humanidad por la UNESCO, y disfrutan de la arquitectura colonial.${ suffix }En Potosí, los mineros extraen plata y zinc en las minas del Cerro Rico, una de las principales actividades económicas de la región.${ suffix }En Tarija, los viñedos producen vinos de alta calidad, atrayendo a turistas y amantes del enoturismo.${ suffix }En Oruro, los bailarines se preparan para el Carnaval de Oruro, una de las celebraciones más grandes y coloridas de Bolivia.${ suffix }En el Chapare, los agricultores cultivan coca y café en las laderas de las montañas, contribuyendo a la economía de la región.${ suffix }En Trinidad, los turistas visitan el Parque Nacional Madidi, una de las áreas protegidas más biodiversas del mundo.${ suffix }En Beni, los pescadores salen al río Mamoré en busca de dorados y surubíes, mientras los turistas disfrutan de la pesca deportiva.${ suffix }En Chuquisaca, los artesanos trabajan en talleres familiares, creando hermosas artesanías de cuero y cerámica.${ suffix }En el Gran Chaco, los guaraníes preservan su cultura y tradiciones ancestrales, compartiendo su conocimiento con las nuevas generaciones.${ suffix }En Cobija, los turistas exploran la selva amazónica y se maravillan con la diversidad de flora y fauna.${ suffix }`,
+    code: `es-BO`,
+    macro: `es`,
+  }
+}

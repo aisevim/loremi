@@ -1,0 +1,11 @@
+export function getText(options = {}) {
+  const {
+    suffix,
+  } = options
+
+  return {
+    text: `La mañana llega a Ecuador, iluminando las calles empedradas de Quito y las aguas cristalinas de Galápagos. Los ecuatorianos se despiertan con el aroma del café y el sonido de los pájaros en la selva.${ suffix }María, una residente de Guayaquil, se levanta temprano para ir al mercado a comprar frutas frescas y mariscos para el almuerzo. El sol brilla sobre el río Guayas.${ suffix }En la Sierra, los agricultores cosechan maíz y papas en los campos verdes de los Andes, contribuyendo a la riqueza agrícola del país.${ suffix }En la Costa, los pescadores salen al mar en sus botes pesqueros, buscando la captura del día para vender en los mercados locales.${ suffix }En la Amazonía, los indígenas practican sus tradiciones ancestrales, honrando la selva y sus espíritus protectores.${ suffix }En las Islas Galápagos, los turistas se maravillan con la diversidad de especies únicas y hacen excursiones para observar la fauna y flora.${ suffix }En Cuenca, los artesanos trabajan en talleres familiares, creando hermosas artesanías de cerámica y tejidos.${ suffix }En Manta, los surfistas disfrutan de las olas en las playas vírgenes, mientras los pescadores regresan con su pesca del día.${ suffix }En Baños, los aventureros hacen rafting en los rápidos del río Pastaza y disfrutan de las aguas termales.${ suffix }En las Islas Galápagos, los biólogos y científicos estudian la biodiversidad única y realizan investigaciones para su conservación.${ suffix }En Otavalo, los comerciantes ofrecen productos artesanales en el mercado indígena más grande de Sudamérica, atrayendo a turistas de todo el mundo.${ suffix }En Montañita, los viajeros disfrutan de la vida nocturna en los bares de playa y comparten historias alrededor de fogatas.${ suffix }En Mindo, los observadores de aves exploran la selva nublada y avistan especies raras y coloridas.${ suffix }En Loja, los músicos interpretan melodías andinas en festivales de música tradicional, celebrando la cultura ecuatoriana.${ suffix }En el Parque Nacional Cotopaxi, los excursionistas hacen senderismo hasta llegar al volcán activo y disfrutan de vistas panorámicas.${ suffix }`,
+    code: `es-EC`,
+    macro: `es`,
+  }
+}
