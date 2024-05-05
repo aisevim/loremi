@@ -30,4 +30,4 @@ jobs:
         run: pnpm run lint
 
       - name: Tests
-        run: pnpm run test:unit:ci
+        run: pnpm run test:ci
