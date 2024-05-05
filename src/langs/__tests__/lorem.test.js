@@ -1,6 +1,6 @@
 import { test, describe } from 'vitest'
 
-import { getLoremi } from '../index'
+import { getLoremi } from '../../index.js'
 
 describe(`Should return the good 'unit' options`, () => {
   test(`Should return only a word using 'word'`, async ({ expect }) => {
